@@ -4,21 +4,17 @@ import * as S from "./styles";
 import { ImgHTMLAttributes } from "react";
 
 type Proptypes = {
-  width?: string;
-  height?: string;
+  width?: number;
+  height?: number;
 } & Partial<ImageProps>;
 
-export const Logo = ({
-  height = "64px",
-  width = "64px",
-  ...rest
-}: Proptypes) => {
+export const Logo = ({ height = 64, width = 64, ...rest }: Proptypes) => {
   return (
     <S.LogoImage
-    height={height}
-    width={width}
-    source={logo}
-    {...rest}
+      height={height}
+      width={width}
+      source={logo}
+      {...rest}
     ></S.LogoImage>
   );
 };

@@ -1,9 +1,9 @@
 import styled from "styled-components/native";
 
 export const LogoImage = styled.Image<{
-  width: string;
-  height: string;
+  width: number;
+  height: number;
 }>`
-  width: ${({ width }) => width};
-  height: ${({ height }) => height};
+  width: ${({ width, theme }) => theme.metrics.px(width)}px;
+  height: ${({ height, theme }) => theme.metrics.px(height)}px;
 `;
