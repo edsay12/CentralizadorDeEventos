@@ -7,8 +7,8 @@ import { Text } from "../../components/CustomText";
 export const SplashScreen = () => {
   return (
     <S.ViewContainer>
-      <Logo height="100px" width="100px" />
-      <Text size="20px" color="black">Notify - App</Text>
+      <Logo height="100px" width="100px"  />
+      <Text size="20px" color="black" font="Roboto_400Regular">Notify - App</Text>
       <StatusBar style="auto" />
     </S.ViewContainer>
   );
