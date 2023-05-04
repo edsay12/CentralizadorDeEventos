@@ -7,9 +7,9 @@ export const fonts = {
     },
   },
   size: {
-    sm: "12px",
-    m: "14px",
-    l: "16px",
-    xl: "22px",
+    sm: '12',
+    m: '14',
+    l: '16',
+    xl: '22',
   },
 };
