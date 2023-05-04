@@ -30,8 +30,8 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <NavigationContainer>
-        <Stack.Navigator screenOptions={{ headerShown: false }}>
-          <Stack.Screen name="initial" component={SplashScreen} />
+        <Stack.Navigator screenOptions={{ headerShown: true , headerTitleAlign:'center' }}>
+          <Stack.Screen name="initial" options={{}} component={SplashScreen} />
           <Stack.Screen name="Home" component={Home} />
         </Stack.Navigator>
       </NavigationContainer>
