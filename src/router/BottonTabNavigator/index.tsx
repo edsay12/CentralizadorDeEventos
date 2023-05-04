@@ -6,6 +6,7 @@ import { AntDesign } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
 
+// Se for ultilizado esse componente deve ser esta em rota
 export const BottonTabNavigator =() => {
   return (
     <Tab.Navigator screenOptions={{headerTitleAlign:'center'}}>

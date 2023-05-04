@@ -8,6 +8,7 @@ export const Home = ({navigation}:{navigation:any})=> {
       <CustomText color="blue"  size="20" >
         Hello
       </CustomText>
+      <Button title="Go to ToatExamples" onPress={() => navigation.navigate('ToastExample')} />
       
     </Container>
   )
