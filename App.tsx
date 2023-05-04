@@ -15,6 +15,7 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "./src/styles/theme";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Home } from "./src/screens/Home";
+import { BottonTabNavigator } from "./src/components/BottonTabNavigator";
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -30,10 +31,13 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <NavigationContainer>
-        <Stack.Navigator screenOptions={{ headerShown: true , headerTitleAlign:'center' }}>
+        {/* <Stack.Navigator
+          screenOptions={{ headerShown: true, headerTitleAlign: "center" }}
+        >
           <Stack.Screen name="initial" options={{}} component={SplashScreen} />
           <Stack.Screen name="Home" component={Home} />
-        </Stack.Navigator>
+        </Stack.Navigator> */}
+        <BottonTabNavigator  />
       </NavigationContainer>
     </ThemeProvider>
   );
