@@ -8,7 +8,7 @@ const Tab = createBottomTabNavigator();
 
 export const BottonTabNavigator =() => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator screenOptions={{headerTitleAlign:'center'}}>
       <Tab.Screen name="Home" options={{tabBarIcon(props) {
         return <Entypo name="home" size={24} color="black" />
       },}} component={Home} />

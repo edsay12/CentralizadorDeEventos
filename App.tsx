@@ -30,14 +30,14 @@ export default function App() {
   const Stack = createNativeStackNavigator();
   return (
     <ThemeProvider theme={theme}>
-      <NavigationContainer>
+      <NavigationContainer >
         {/* <Stack.Navigator
           screenOptions={{ headerShown: true, headerTitleAlign: "center" }}
         >
           <Stack.Screen name="initial" options={{}} component={SplashScreen} />
           <Stack.Screen name="Home" component={Home} />
         </Stack.Navigator> */}
-        <BottonTabNavigator  />
+        <BottonTabNavigator   />
       </NavigationContainer>
     </ThemeProvider>
   );
