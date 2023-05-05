@@ -5,12 +5,17 @@ import { Text } from "../../components/CustomText";
 import { Container } from "../../components/Container";
 import { useEffect } from "react";
 
+import { RootStackParamList } from "../../router";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { useNavigation } from "@react-navigation/native";
 
-export const SplashScreen = ({
-  navigation,
-}: {
-  navigation: any;
-}) => {
+type SplashScreenScreenNavigatorProp = NativeStackNavigationProp<
+  RootStackParamList,
+  "SplashScreen"
+>;
+
+export const SplashScreen = () => {
+  const navigation = useNavigation<SplashScreenScreenNavigatorProp>();
   useEffect(() => {
     setTimeout(() => {
       navigation.navigate("Home");
@@ -23,8 +28,8 @@ export const SplashScreen = ({
       <Text size="20px" color="black" font="Roboto_400Regular">
         Notify - App
       </Text>
-      <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
-      
+      <Button title="Go to Home" onPress={() => navigation.navigate("Home")} />
+
       <StatusBar style="auto" />
     </Container>
   );

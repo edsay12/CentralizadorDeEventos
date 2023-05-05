@@ -5,7 +5,7 @@ import { Text } from "../../components/CustomText";
 import { Container } from "../../components/Container";
 import { useEffect } from "react";
 
-export const ToastExample = ({ navigation }: { navigation: any }) => {
+export const ToastExample = () => {
   const showToast = () => {
     ToastAndroid.show("A pikachu appeared nearby !", ToastAndroid.SHORT);
   };
@@ -14,7 +14,7 @@ export const ToastExample = ({ navigation }: { navigation: any }) => {
     ToastAndroid.showWithGravity(
       "All Your Base Are Belong To Us",
       ToastAndroid.SHORT,
-      ToastAndroid.CENTER,
+      ToastAndroid.CENTER
     );
   };
 
@@ -30,7 +30,6 @@ export const ToastExample = ({ navigation }: { navigation: any }) => {
 
   return (
     <Container align="center" justify="center">
-      
       <Button title="Toggle Toast" onPress={() => showToast()} />
       <Button
         title="Toggle Toast With Gravity"
