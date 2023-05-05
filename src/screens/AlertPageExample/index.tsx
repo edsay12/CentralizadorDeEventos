@@ -1,10 +1,11 @@
 import React from "react";
 import { View, StyleSheet, Button, Alert } from "react-native";
 import { AlertButton } from "../../components/AlertButton";
+import { Container } from "../../components/Container";
 
 export const AlertPageExample = () => {
   return (
-    <View style={styles.container}>
+    <Container align="center" justify="center">
       <AlertButton
         buttonOptions={{ color: "red", title: "Alert Message" }}
         alertMessage="Precise para fechar"
@@ -17,14 +18,7 @@ export const AlertPageExample = () => {
           },
         ]}
       />
-    </View>
+    </Container>
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "space-around",
-    alignItems: "center",
-  },
-});
