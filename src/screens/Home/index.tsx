@@ -29,7 +29,7 @@ export const Home = () => {
         color={'red'}
       />
       <Button
-        title="AlertPageExample"
+        title="Alert Page Example"
         onPress={() => navigation.navigate("AlertPageExample")}
         color={'red'}
       />

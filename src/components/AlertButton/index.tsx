@@ -1,18 +1,16 @@
 import { Alert, Button, ButtonProps } from "react-native";
 import styled from "styled-components/native";
 
+type AlertOptions = {
+  text: string;
+  style: "cancel" | "default" | "destructive";
+  onPress: () => void;
+};
 type PropType = {
   buttonOptions: ButtonProps;
   alertTitle: string;
   alertMessage: string;
-  alertOptions: [
-    {
-      text: string;
-      style: "cancel" | "default" | "destructive";
-      onPress:()=> void
-     
-    }
-  ];
+  alertOptions: AlertOptions[];
 };
 
 export const AlertButton = ({

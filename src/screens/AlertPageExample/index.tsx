@@ -12,9 +12,14 @@ export const AlertPageExample = () => {
         alertTitle="Uma mensagem de teste"
         alertOptions={[
           {
-            onPress: () => console.log("hello"),
+            onPress: () => console.log("Cancelado"),
             style: "cancel",
             text: "Cancelar",
+          },
+          {
+            onPress: () => console.log("Okay"),
+            style: "default",
+            text: "ok",
           },
         ]}
       />
