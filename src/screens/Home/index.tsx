@@ -21,7 +21,12 @@ export const Home = () => {
       </CustomText>
       <Button
         title="Go to ToatExamples"
-        onPress={() => navigation.navigate("ToastExamples")}
+        onPress={() => navigation.navigate("ToastExample")}
+      />
+      <Button
+        title="Go to ElaboratePage"
+        onPress={() => navigation.navigate("ElaboratePage")}
+        color={'red'}
       />
     </Container>
   );

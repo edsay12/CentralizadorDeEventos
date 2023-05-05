@@ -16,7 +16,7 @@ import { theme } from "./src/styles/theme";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Home } from "./src/screens/Home";
 import { BottonTabNavigator } from "./src/router/BottonTabNavigator";
-import { Router } from "./src/router";
+import { BottomRoute, Router } from "./src/router";
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -32,6 +32,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router />
+     
     </ThemeProvider>
   );
 }

@@ -6,6 +6,7 @@ type ThemeColors = {
   blue: string;
   red: string;
   white: string;
+  black: string;
 };
 
 theme.colors;
@@ -15,7 +16,7 @@ type PropTypes = {
   align?: string;
   justify?: string;
   w?: string;
-  h?:string
+  h?: string;
 };
 
 export const Container = styled.View<PropTypes>`
