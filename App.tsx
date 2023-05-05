@@ -13,9 +13,7 @@ import {
 import { Loading } from "./src/components/Loading";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./src/styles/theme";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { Home } from "./src/screens/Home";
-import { BottonTabNavigator } from "./src/router/BottonTabNavigator";
+
 import { BottomRoute, Router } from "./src/router";
 
 export default function App() {

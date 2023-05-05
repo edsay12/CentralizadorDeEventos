@@ -8,12 +8,14 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Entypo } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 import { theme } from "../styles";
+import { AlertPageExample } from "../screens/AlertPageExample";
 
 export type RootStackParamList = {
   SplashScreen: undefined;
   Home: undefined;
   ToastExample: undefined;
   ElaboratePage: undefined;
+  AlertPageExample: undefined;
 };
 
 export const BottomRoute = () => {
@@ -22,9 +24,9 @@ export const BottomRoute = () => {
   return (
     <Tab.Navigator
       screenOptions={{
-        tabBarStyle:{
-          backgroundColor:theme.colors.black,
-        }
+        tabBarStyle: {
+          backgroundColor: theme.colors.black,
+        },
       }}
     >
       <Tab.Screen
@@ -64,6 +66,7 @@ export const Router = () => {
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="ToastExample" component={ToastExample} />
         <Stack.Screen name="ElaboratePage" component={BottomRoute} />
+        <Stack.Screen name="AlertPageExample" component={AlertPageExample} />
       </Stack.Navigator>
     </NavigationContainer>
   );

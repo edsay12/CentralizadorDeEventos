@@ -28,6 +28,11 @@ export const Home = () => {
         onPress={() => navigation.navigate("ElaboratePage")}
         color={'red'}
       />
+      <Button
+        title="AlertPageExample"
+        onPress={() => navigation.navigate("AlertPageExample")}
+        color={'red'}
+      />
     </Container>
   );
 };
