@@ -33,6 +33,11 @@ export const Home = () => {
         onPress={() => navigation.navigate("AlertPageExample")}
         color={'red'}
       />
+      <Button
+        title="Camera"
+        onPress={() => navigation.navigate("Camera")}
+        color={'green'}
+      />
     </Container>
   );
 };

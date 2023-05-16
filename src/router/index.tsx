@@ -9,6 +9,7 @@ import { Entypo } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 import { theme } from "../styles";
 import { AlertPageExample } from "../screens/AlertPageExample";
+import { Camera } from "../screens/Camera";
 
 export type RootStackParamList = {
   SplashScreen: undefined;
@@ -67,6 +68,7 @@ export const Router = () => {
         <Stack.Screen name="ToastExample" component={ToastExample} />
         <Stack.Screen name="ElaboratePage" component={BottomRoute} />
         <Stack.Screen name="AlertPageExample" component={AlertPageExample} />
+        <Stack.Screen name="Camera" component={Camera} />
       </Stack.Navigator>
     </NavigationContainer>
   );
