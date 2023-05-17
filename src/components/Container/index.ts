@@ -9,7 +9,7 @@ type ThemeColors = {
   black: string;
 };
 
-theme.colors;
+
 type PropTypes = {
   dir?: string;
   color?: keyof ThemeColors;

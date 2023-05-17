@@ -2,8 +2,6 @@ import { Button } from "react-native";
 import { Container } from "../../components/Container";
 import { CustomText } from "../../components/CustomText/style";
 import {
-  ParamListBase,
-  NavigatorScreenParams,
   useNavigation,
 } from "@react-navigation/native";
 
@@ -31,6 +29,11 @@ export const Home = () => {
       <Button
         title="Alert Page Example"
         onPress={() => navigation.navigate("AlertPageExample")}
+        color={'red'}
+      />
+      <Button
+        title="Pagina de localização"
+        onPress={() => navigation.navigate("Localization")}
         color={'red'}
       />
     </Container>
