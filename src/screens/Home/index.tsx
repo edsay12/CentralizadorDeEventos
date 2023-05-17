@@ -32,10 +32,18 @@ export const Home = () => {
         color={'red'}
       />
       <Button
+
+        title="Camera"
+        onPress={() => navigation.navigate("Camera")}
+        color={'green'}
+      />
+      <Button
         title="Pagina de localização"
         onPress={() => navigation.navigate("Localization")}
         color={'red'}
       />
+      
+      
     </Container>
   );
 };
