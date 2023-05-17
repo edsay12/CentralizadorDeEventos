@@ -2,8 +2,6 @@ import { Button } from "react-native";
 import { Container } from "../../components/Container";
 import { CustomText } from "../../components/CustomText/style";
 import {
-  ParamListBase,
-  NavigatorScreenParams,
   useNavigation,
 } from "@react-navigation/native";
 
@@ -34,10 +32,18 @@ export const Home = () => {
         color={'red'}
       />
       <Button
+
         title="Camera"
         onPress={() => navigation.navigate("Camera")}
         color={'green'}
       />
+      <Button
+        title="Pagina de localização"
+        onPress={() => navigation.navigate("Localization")}
+        color={'red'}
+      />
+      
+      
     </Container>
   );
 };
