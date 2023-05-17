@@ -21,6 +21,7 @@ export type RootStackParamList = {
   ElaboratePage: undefined;
   AlertPageExample: undefined;
   Localization: undefined;
+  Camera:undefined;
 };
 
 export const BottomRoute = () => {
