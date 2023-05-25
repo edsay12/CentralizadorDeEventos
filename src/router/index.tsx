@@ -12,7 +12,7 @@ import { AlertPageExample } from "../screens/AlertPageExample";
 import { Camera } from "../screens/Camera";
 
 import { Localization } from "../screens/Localization";
-
+import { ReconhecimentoDeToques } from "../screens/ReconhecimentoDeToques";
 
 export type RootStackParamList = {
   SplashScreen: undefined;
@@ -21,7 +21,8 @@ export type RootStackParamList = {
   ElaboratePage: undefined;
   AlertPageExample: undefined;
   Localization: undefined;
-  Camera:undefined;
+  Camera: undefined;
+  ReconhecimentoDeToques: undefined;
 };
 
 export const BottomRoute = () => {
@@ -75,9 +76,7 @@ export const Router = () => {
         <Stack.Screen name="AlertPageExample" component={AlertPageExample} />
         <Stack.Screen name="Localization" component={Localization} />
         <Stack.Screen name="Camera" component={Camera} />
-
-        
-
+        <Stack.Screen name="ReconhecimentoDeToques" component={ReconhecimentoDeToques} />
       </Stack.Navigator>
     </NavigationContainer>
   );

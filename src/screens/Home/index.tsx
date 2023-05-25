@@ -42,6 +42,11 @@ export const Home = () => {
         onPress={() => navigation.navigate("Localization")}
         color={'red'}
       />
+      <Button
+        title="Reconhecimento de toques"
+        onPress={() => navigation.navigate("ReconhecimentoDeToques")}
+        color={'red'}
+      />
       
       
     </Container>
