@@ -11,11 +11,12 @@ import {
   GestureEvent,
   PanGestureHandlerEventPayload,
 } from "react-native-gesture-handler";
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-export const ReconhecimentoDeToques = () => {
+export const ReconhecimentoDeToques = ({ navigation }) => {
   const [touchCount, setTouchCount] = useState(0);
   const [swipeDetected, setSwipeDetected] = useState(false);
- 
 
   const handlePanGesture = (
     event: GestureEvent<PanGestureHandlerEventPayload>
@@ -36,6 +37,7 @@ export const ReconhecimentoDeToques = () => {
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
+      <ButtonStyled title="Voltar" onPress={() => navigation.navigate("Home")}/>
       <PanGestureHandler
         onGestureEvent={handlePanGesture}
         onHandlerStateChange={handlePanGesture}
