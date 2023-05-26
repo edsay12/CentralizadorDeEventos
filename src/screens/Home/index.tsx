@@ -47,8 +47,16 @@ export const Home = () => {
         onPress={() => navigation.navigate("ReconhecimentoDeToques")}
         color={'red'}
       />
-      
-      
+      <Button
+        title="Criar Enquete"
+        onPress={() => navigation.navigate("CreatePoll")}
+        color={'red'}
+      />
+      <Button
+        title="Ver Enquete"
+        onPress={() => navigation.navigate("AllPolls")}
+        color={'red'}
+      />
     </Container>
   );
 };

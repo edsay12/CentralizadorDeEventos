@@ -13,6 +13,8 @@ import { Camera } from "../screens/Camera";
 
 import { Localization } from "../screens/Localization";
 import { ReconhecimentoDeToques } from "../screens/ReconhecimentoDeToques";
+import { CreatePoll } from "../screens/CreatePoll";
+import { AllPolls } from "../screens/AllPolls";
 
 export type RootStackParamList = {
   SplashScreen: undefined;
@@ -23,6 +25,7 @@ export type RootStackParamList = {
   Localization: undefined;
   Camera: undefined;
   ReconhecimentoDeToques: undefined;
+  Enquete: undefined;
 };
 
 export const BottomRoute = () => {
@@ -77,6 +80,8 @@ export const Router = () => {
         <Stack.Screen name="Localization" component={Localization} />
         <Stack.Screen name="Camera" component={Camera} />
         <Stack.Screen name="ReconhecimentoDeToques" component={ReconhecimentoDeToques} />
+        <Stack.Screen name="CreatePoll" component={CreatePoll} />
+        <Stack.Screen name="AllPolls" component={AllPolls} />
       </Stack.Navigator>
     </NavigationContainer>
   );
